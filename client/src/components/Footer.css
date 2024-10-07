@@ -1,0 +1,46 @@
+.footer {
+    background-color: #343a40;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center align content within the footer */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column layout for smaller screens */
+    align-items: center; /* Center align items */
+}
+
+.footer-links {
+    list-style: none; /* Removes default list styles */
+    padding: 0; /* Removes padding */
+    margin: 10px 0 0; /* Adjust margin */
+    display: flex; /* Flexbox for links */
+    justify-content: center; /* Center align links */
+}
+
+.footer-links li {
+    margin: 0 15px; /* Spacing between links */
+}
+
+.footer-links a {
+    color: #fff; /* White link color */
+    text-decoration: none; /* Removes underline */
+    font-weight: 500; /* Medium weight for text */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-links a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+.footer p {
+    margin: 0;
+}

@@ -1,0 +1,90 @@
+/* Upload Container */
+.upload-container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #ffffff; /* Lighter background for contrast */
+    padding: 40px; /* Increased padding for more spacious layout */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.upload-container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.upload-container h1 {
+    margin-bottom: 20px;
+    font-size: 30px; /* Slightly larger font size */
+    color: #007bff; /* Primary brand color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+/* File Input Styling */
+.file-input-container {
+    position: relative;
+    margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+#file-input {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.custom-file-label {
+    display: inline-block;
+    padding: 12px 20px; /* Adjusted padding for a better button look */
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #e7f0ff; /* Soft background for file label */
+    color: #007bff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500; /* Slightly bolder text */
+}
+
+.custom-file-label:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Upload Button */
+.upload-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px; /* Adjusted padding for better appearance */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Larger font size for better visibility */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Message Styling */
+.upload-message {
+    margin-top: 20px; /* Increased top margin */
+    font-size: 16px;
+    color: green;
+    font-weight: bold; /* Make the message bold for emphasis */
+}
+
+@media (max-width: 768px) {
+    .upload-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .upload-btn, .custom-file-label {
+        width: 100%;
+    }
+}

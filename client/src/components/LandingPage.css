@@ -1,0 +1,104 @@
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Ensures it takes up all available vertical space */
+    height: calc(100vh - 190px); /* Full height minus footer space */
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Gradient background */
+    color: #fff;
+    padding: 2rem;
+    text-align: center; /* Center text for better readability */
+}
+
+.landing-hero {
+    max-width: 800px; /* Increase max width for larger screens */
+}
+
+.landing-hero h1 {
+    font-size: 3.5rem; /* Larger font size for better impact */
+    margin-bottom: 1.5rem;
+    font-weight: 700; /* Slightly bolder font weight */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+}
+
+.landing-hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Increased gap for better spacing */
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+}
+
+.btn-primary, .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 30px; /* Rounded corners for a modern look */
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s ease, transform 0.2s; /* Added transform for hover effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.btn-primary {
+    background-color: #0072ff;
+}
+
+.btn-primary:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.btn-secondary {
+    background-color: #00c6ff;
+}
+
+.btn-secondary:hover {
+    background-color: #0080b5;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Responsive button styles */
+.landing-button {
+    padding: 15px 30px;
+    font-size: 1.2rem; /* Increased font size */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 30px; /* Rounded corners for a modern look */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform for hover effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.landing-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .landing-page{
+        height: calc(100vh - 240px);
+    }
+    .landing-hero h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+    
+    .landing-hero p {
+        font-size: 1rem; /* Smaller paragraph font size */
+    }
+
+    .cta-buttons {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: center; /* Center align buttons */
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%; /* Full width buttons on smaller screens */
+        max-width: 300px; /* Max width for buttons */
+    }
+}
