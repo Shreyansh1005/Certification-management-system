@@ -1,0 +1,32 @@
+.header {
+    background-color: #343a40;
+    padding: 20px 0;
+    color: white;
+}
+
+.header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header nav {
+    text-align: center;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline;
+}

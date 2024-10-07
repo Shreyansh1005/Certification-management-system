@@ -1,0 +1,30 @@
+.certificate-details {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.qr-code-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.docs, .download {
+    margin: 0 5px;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+}
